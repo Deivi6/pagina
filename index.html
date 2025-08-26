@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tienda de cannabis - Productos Sativa, Indica e Híbrida de calidad premium">
+  <title>GreenFl</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="menu container">
+      <!-- Logo principal -->
+      <img class="logo-1" src="imagenes/logo.png" alt="Logo principal">
+
+      <!--  -->
+      <input type="checkbox" id="menu" />
+      <label for="menu">
+        <img src="imagenes/logo.png" class="menu-icono" alt="Icono de menú">
+      </label>
+
+      <!-- NAVBAR -->
+      <nav class="navbar" aria-label="Menú principal">
+
+        <!-- Menú principal (izquierda) -->
+        <div class="menu-1">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Productos</a></li>
+          </ul>
+        </div>
+
+        <!-- Logo secundario (centro) -->
+        <div class="logo-2">
+          <img src="imagenes/logo2.png" alt="Logo secundario">
+        </div>
+
+        <!-- Menú secundario (derecha) -->
+        <div class="menu-2">
+          <ul>
+            <li><a href="#">Horario</a></li>
+          </ul>
+          <div class="Socials">
+            <a href="#" role="button">
+              <div class="Social"><img src="imagenes/s1.svg" alt="Facebook"></div>
+            </a>
+            <a href="#" role="button">
+              <div class="Social"><img src="imagenes/s2.svg" alt="Instagram"></div>
+            </a>
+            <a href="#" role="button">
+              <div class="Social"><img src="imagenes/s3.svg" alt="Twitter"></div>
+            </a>
+          </div>
+        </div>
+
+      </nav>
+    </div>
+
+    <!-- SLIDER -->
+    <div class="header-content container">
+      <div class="swiper mySwiper-1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider">
+              <div class="slider-text">
+                <h2>Sativa</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                <div class="botones">
+                  <a href="#" class="btn-1" role="button">Comprar</a>
+                  <a href="#" class="btn-1" role="button">Menú</a>
+                </div>
+              </div>
+              <div class="slider-img">
+                <img src="imagenes/sativa.png" alt="Variedad Sativa" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider">
+              <div class="slider-text">
+                <h2>Indica</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                <div class="botones">
+                  <a href="#" class="btn-1" role="button">Comprar</a>
+                  <a href="#" class="btn-1" role="button">Menú</a>
+                </div>
+              </div>
+              <div class="slider-img">
+                <img src="imagenes/indica.png" alt="Variedad Indica" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slider">
+              <div class="slider-text">
+                <h2>Híbrida</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                <div class="botones">
+                  <a href="#" class="btn-1" role="button">Comprar</a>
+                  <a href="#" class="btn-1" role="button">Menú</a>
+                </div>
+              </div>
+              <div class="slider-img">
+                <img src="imagenes/hibrida.png" alt="Variedad Híbrida" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </header>
+
+    <!-- ================= MAIN ================= -->
+  <main class="Products">
+    <h2 class="container">Nuestros Productos</h2>
+    <div class="tabs container">
+
+      <!-- TAB SATIVA -->
+      <input type="radio" name="tabs" id="tab1" checked class="tabInput">
+      <label for="tab1">Sativa</label>
+      <div class="tab">
+        <div class="swiper mySwiper-2" id="swiper1">
+          <div class="swiper-wrapper">
+            <!-- Producto 1 -->
+            <div class="swiper-slide">
+              <div class="Product">
+                <div class="Product-img">
+                  <h4>Nuevo</h4>
+                  <img src="imagenes/acapulcogold.png" alt="Acapulco Gold" loading="lazy">
+                </div>
+                <div class="Product-txt">
+                  <h4>Acapulco Gold</h4>
+                  <p>Calidad premium</p>
+                  <span class="price">$10</span>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="swiper-slide">
+              <div class="Product">
+                <div class="Product-img">
+                  <h4>Nuevo</h4>
+                  <img src="imagenes/sativa haze.png" alt="Sativa Haze" loading="lazy">
+                </div>
+                <div class="Product-txt">
+                  <h4>Sativa Haze</h4>
+                  <p>Calidad premium</p>
+                  <span class="price">$25</span>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="swiper-slide">
+              <div class="Product">
+                <div class="Product-img">
+                  <h4>Nuevo</h4>
+                  <img src="imagenes/st thai.png" alt="Sativa Thai" loading="lazy">
+                </div>
+                <div class="Product-txt">
+                  <h4>Sativa Thai</h4>
+                  <p>Calidad premium</p>
+                  <span class="price">$15</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Botones -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+
+      <!-- TAB INDICA -->
+      <input type="radio" name="tabs" id="tab2" class="tabInput">
+      <label for="tab2">Indica</label>
+      <div class="tab">
+        <div class="swiper mySwiper-2" id="swiper2">
+          <div class="swiper-wrapper">
+            <!-- Producto 1 -->
+            <div class="swiper-slide">
+              <div class="Product">
+                <div class="Product-img">
+                  <h4>Nuevo</h4>
+                  <img src="imagenes/afg kush.png" alt="Afghan Kush" loading="lazy">
+                </div>
+                <div class="Product-txt">
+                  <h4>Afghan Kush</h4>
+                  <p>Calidad premium</p>
+                  <span class="price">$10</span>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="swiper-slide">
+              <div class="Product">
+                <div class="Product-img">
+                  <h4>Nuevo</h4>
+                  <img src="imagenes/indica grnp.png" alt="Indica Green" loading="lazy">
+                </div>
+                <div class="Product-txt">
+                  <h4>Indica Green</h4>
+                  <p>Calidad premium</p>
+                  <span class="price">$25</span>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="swiper-slide">
+              <div class="Product">
+                <div class="Product-img">
+                  <h4>Nuevo</h4>
+                  <img src="imagenes/indica.png" alt="Indica Premium" loading="lazy">
+                </div>
+                <div class="Product-txt">
+                  <h4>Indica Premium</h4>
+                  <p>Calidad premium</p>
+                  <span class="price">$15</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Botones -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+
+      <!-- TAB HÍBRIDA -->
+      <input type="radio" name="tabs" id="tab3" class="tabInput">
+      <label for="tab3">Híbrida</label>
+      <div class="tab">
+        <div class="swiper mySwiper-2" id="swiper3">
+          <div class="swiper-wrapper">
+            <!-- Producto 1 -->
+            <div class="swiper-slide">
+              <div class="Product">
+                <div class="Product-img">
+                  <h4>Nuevo</h4>
+                  <img src="imagenes/indica.png" alt="Híbrida Premium" loading="lazy">
+                </div>
+                <div class="Product-txt">
+                  <h4>Híbrida Premium</h4>
+                  <p>Calidad premium</p>
+                  <span class="price">$10</span>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="swiper-slide">
+              <div class="Product">
+                <div class="Product-img">
+                  <h4>Nuevo</h4>
+                  <img src="imagenes/ak47.png" alt="Híbrida Green" loading="lazy">
+                </div>
+                <div class="Product-txt">
+                  <h4>Híbrida Green</h4>
+                  <p>Calidad premium</p>
+                  <span class="price">$25</span>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="swiper-slide">
+              <div class="Product">
+                <div class="Product-img">
+                  <h4>Nuevo</h4>
+                  <img src="imagenes/hibrida bd.png" alt="Híbrida Afghan" loading="lazy">
+                </div>
+                <div class="Product-txt">
+                  <h4>Híbrida Afghan</h4>
+                  <p>Calidad premium</p>
+                  <span class="price">$15</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Botones -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ================= INFO ================= -->
+  <section class="info container">
+    <div class="info-img">
+      <img src="imagenes/info.png" alt="Imagen informativa" loading="lazy">
+    </div>
+
+    <div class="info-txt">
+      <h2>Información</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+      <a href="#" class="btn-2" role="button">Más información</a>
+    </div>
+  </section>
+
+  <!-- ================= HORARIO ================= -->
+  <section class="horario">
+    <div class="horario-txt">
+      <div class="txt">
+        <h4>Dirección</h4>
+        <p>Medellín</p>
+      </div>
+      <div class="txt">
+        <h4>Horario</h4>
+        <p>Lunes a viernes: 9am - 8pm</p>
+        <p>Sábado y domingo: 11am - 7pm</p>
+      </div>
+      <div class="txt">
+        <h4>Teléfono</h4>
+        <p>777777777</p>
+        <p>777777777</p>
+      </div>
+      <div class="txt">
+        <h4>Redes sociales</h4>
+        <div class="Socials">
+          <a href="#" role="button"><div class="Social"><img src="imagenes/s1.svg" alt="Facebook"></div></a>
+          <a href="#" role="button"><div class="Social"><img src="imagenes/s2.svg" alt="Instagram"></div></a>
+          <a href="#" role="button"><div class="Social"><img src="imagenes/s3.svg" alt="Twitter"></div></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MAPA ================= -->
+  <section class="mapa">
+    <h2>Encuéntranos</h2>
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7603230417234!2d-74.08174928523774!3d4.609710443898546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a4b7a4c4fb%3A0x1234567890abcdef!2sBogotá%2C%20Colombia!5e0!3m2!1ses!2sco!4v1699999999999!5m2!1ses!2sco" 
+    allowfullscreen 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+     </iframe>
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer container">
+    <img src="imagenes/footer-logo.png" alt="Logo del pie de página" loading="lazy">
+    <div class="links">
+      <h4>Lorem</h4>
+      <ul>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+      </ul>
+    </div>
+    <div class="links">
+      <h4>Lorem</h4>
+      <ul>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+      </ul>
+    </div>
+    <div class="links">
+      <h4>Lorem</h4>
+      <ul>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+      </ul>
+    </div>
+    <div class="links">
+      <h4>Lorem</h4>
+      <div class="Socials">
+        <a href="#" role="button"><div class="Social"><img src="imagenes/s1.svg" alt="Facebook"></div></a>
+        <a href="#" role="button"><div class="Social"><img src="imagenes/s2.svg" alt="Instagram"></div></a>
+        <a href="#" role="button"><div class="Social"><img src="imagenes/s3.svg" alt="Twitter"></div></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= SCRIPTS ================= -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

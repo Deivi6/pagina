@@ -1,0 +1,337 @@
+/* ================================
+   1. VARIABLES - TEORÍA DEL COLOR
+   Verde oscuro = confianza, naturaleza
+   Verde claro = frescura, vitalidad
+   Blanco = pureza, contraste
+   Gris oscuro = legibilidad
+==================================*/
+:root {
+  --color-primary: #2e7d32;   /* Verde medio (principal) */
+  --color-secondary: #81c784; /* Verde claro y fresco */
+  --color-bg: #f9f9f9;
+  --color-text: #333;
+  --color-white: #fff;
+
+  --max-width: 1200px;
+  --transition: 0.3s ease-in-out;
+}
+
+
+/* ================================
+   2. RESETEO Y BASE
+==================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ================================
+   3. HEADER + NAVBAR ORGANIZADA
+==================================*/
+header {
+  background: var(--color-primary);
+  color: var(--color-white);
+  position: relative;
+  z-index: 10;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+/* LOGO PRINCIPAL */
+.logo-1 {
+  height: 45px;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  gap: 2rem;
+}
+
+/* Menú izquierdo y derecho */
+.navbar > .menu-1,
+.navbar > .menu-2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-1 ul,
+.menu-2 ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.menu-1 a,
+.menu-2 a {
+  color: var(--color-white);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.menu-1 a:hover,
+.menu-2 a:hover {
+  color: var(--color-accent);
+}
+
+/* LOGO SECUNDARIO (centrado y pequeño) */
+.logo-2 img {
+  height: 35px;  /* más pequeño que antes */
+  display: block;
+}
+
+/* Redes sociales */
+.menu-2 {
+  gap: 1.5rem;
+}
+
+.menu-2 .Socials {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.Social img {
+  width: 22px;
+  transition: var(--transition);
+}
+
+.Social img:hover {
+  transform: scale(1.1);
+}
+
+/* ================================
+   4. RESPONSIVE NAVBAR
+==================================*/
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 35px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color-primary);
+    width: 100%;
+    padding: 2rem 0;
+    gap: 2rem;
+    transition: var(--transition);
+  }
+
+  #menu:checked ~ .navbar {
+    left: 0;
+  }
+
+  .navbar > .menu-1,
+  .navbar > .menu-2 {
+    flex: none;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar > .logo-2 {
+    order: -1; /* logo secundario arriba en móviles */
+  }
+
+  .menu-icono {
+    display: block;
+  }
+}
+
+/* ================================
+   5. SECCIÓN MAPA DE GOOGLE
+==================================*/
+.mapa {
+  background: var(--color-white);
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.mapa h2 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.mapa iframe {
+  width: 100%;
+  max-width: 1000px;
+  height: 400px;
+  border: 2px solid var(--color-secondary);
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+/* ================================
+   6. SECCIÓN PRODUCTOS
+==================================*/
+.productos {
+  padding: 3rem 1rem;
+  background: var(--color-bg);
+  text-align: center;
+}
+
+.productos h2 {
+  font-size: 2.2rem;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+}
+
+.producto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.producto-card {
+  background: var(--color-white);
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.producto-card:hover {
+  transform: translateY(-5px);
+}
+
+.producto-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* TITULOS DE INDICA, SATIVA E HIBRIDA */
+.producto-card h3 {
+  font-size: 1.4rem;
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+  text-align: center; /* 🔹 Aquí centramos */
+}
+
+.producto-card p {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  text-align: center; /* 🔹 Y el texto también centrado */
+}
+
+.Product-img h4 {
+  background: var(--color-secondary);
+  color: var(--color-white);
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+  margin: 0 auto 0.5rem auto; /* centrado horizontal */
+  text-align: center;
+}
+/* Centrar el contenido de cada tarjeta */
+.Product {
+  background: var(--color-white);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center; /* 👈 fuerza a que todo dentro esté centrado */
+  padding: 1rem;
+  transition: var(--transition);
+}
+
+.Product-img h4 {
+  background: var(--color-secondary);
+  color: var(--color-white);
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  text-align: center; /* 👈 asegura que el texto esté centrado */
+}
+/* ================================
+   TABS (Sativa, Indica, Híbrida)
+==================================*/
+
+/* Contenedor general de productos */
+.Products {
+  padding: 3rem 0;
+  text-align: center; /* Centra títulos */
+}
+
+/* Contenedor de los botones */
+.tab-labels {
+  display: flex;
+  justify-content: center; /* centra horizontal */
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap; /* evita que estire en pantallas pequeñas */
+}
+
+/* Botones (labels) */
+.tab-labels label {
+  font-weight: bold;
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+  border-radius: 20px;
+  background: var(--color-bg);
+  border: 2px solid var(--color-secondary);
+  color: var(--color-text);
+  transition: var(--transition);
+  display: inline-block;
+}
+
+/* Hover */
+.tab-labels label:hover {
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+
+/* Eliminar el círculo de selección */
+.tabInput {
+  display: none;
+}
+
+/* Estado activo (botón seleccionado) */
+.tabInput:checked + label {
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+
+
+
